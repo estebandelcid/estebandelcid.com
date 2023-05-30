@@ -2,7 +2,7 @@ import Head from "next/head";
 import Layout, { siteTitle } from "./components/layout";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
-import Date from "./components/date";
+import DateFormat from "./components/date";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -36,7 +36,6 @@ export default function Home({ allPostsData }) {
             className=" font-medium ml-9"
             href="https://www.linkedin.com/in/estebandelcid/"
           >
-            {" "}
             More about me
           </a>
           <br />
@@ -48,13 +47,11 @@ export default function Home({ allPostsData }) {
         <h2 className="text-xl leading-[1.4px] my-6 mx-0">Blog</h2>
         <ul className=" list-none p-0 m-0">
           {allPostsData.map(({ id, date, title }) => (
-            <li className="mt-0 mx-0 mb-5">
-              <Link href={`/posts/${id}`} key={id}>
-                {title}
-              </Link>
+            <li className="mt-0 mx-0 mb-5" key={id}>
+              <Link href={`/posts/${id}`}>{title}</Link>
               <br />
               <small className=" text-[#666]">
-                <Date dateString={date} />
+                <p>{DateFormat(date)}</p>
               </small>
               <br />
             </li>
