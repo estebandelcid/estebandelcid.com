@@ -3,6 +3,10 @@ import Layout, { siteTitle } from "./components/layout";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import DateFormat from "./components/date";
+import Card from "./components/Card";
+import HeaderSection from "./components/headerSection";
+import ListOfCards from "./components/ListOfCards";
+
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -14,12 +18,15 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
+
   return (
-    <Layout home className="text-sans">
-      {/* <> */}
+    <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <HeaderSection/>
+
+{/* 
       <section className=" mx-8 text-black-900 w-auto h-auto flex-col justify-center font-sans font-semibold">
         <p className="text-center text-3xl">
           Hi, i´m Esteban,
@@ -31,19 +38,20 @@ export default function Home({ allPostsData }) {
           World
         </p>
         <section className=" text-green-500 font-light">
-          <p className=" mb-10 text-base">{"<Link>"}</p>
-          <a
-            className=" font-medium ml-9"
-            href="https://www.linkedin.com/in/estebandelcid/"
+          <p className=" mb-10 text-xl">{"<Link>"}</p>
+          <Link
+            className=" font-medium ml-9 text-[22px] text-[#E71B40] hover:text-white hover:underline decoration-[#E71B40] underline-offset-4"
+            href={`/posts/aboutMe`}
           >
             More about me
-          </a>
+          </Link>
           <br />
-          <p className=" mt-10">{"</Link>"}</p>
+          <p className=" mt-10 text-xl">{"</Link>"}</p>
         </section>
-      </section>
+      </section> */}
 
-      <section className="text-xl leading-5 pt-px">
+      {/* Blog seccion  */}
+      {/* <section className="text-xl leading-5 pt-px">
         <h2 className="text-xl leading-[1.4px] my-6 mx-0">Blog</h2>
         <ul className=" list-none p-0 m-0">
           {allPostsData.map(({ id, date, title }) => (
@@ -57,11 +65,40 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
-      </section>
-      {/* </> */}
+      </section> */}
+
+      <div className=" h-auto w-screen ">
+        <section className=" w-full h-full grid grid-cols-1 gap-8 mb-8 items-center place-items-center text-[22px] ">
+          {/* prove ListOfCards  */}
+          <ListOfCards/>
+
+          {/* probando componente card */}
+          {/* <Card
+            className=" card-styles bg-[url('../assets/mesh-lapsso.png')]"
+            title="Lapsso"
+            href="https:/laps.so"
+            description="The place to store it all"
+            tecnologies="React, Next.js, Typescript, Node.js, Prisma, tRPC, Zustand, Tailwind, ProseMirror, Websockets, ReactQuery Cypress, CI/CD, Github Actions."
+          />
+          <Card
+            className="card-styles bg-[url('../public/images/mesh-petgram.png')]"
+            title="Petgram"
+            href="https://petgram-edelcid.vercel.app/"
+            description="Proyect about photos of pets"
+            tecnologies="React, Next.js, Typescript, StrapiCMS, PWA, CSS Modules, Tailwind, Workbox, IndexedDB, Google Analytics"
+          />
+          <Card
+            className="card-styles bg-[url('../assets/mesh-theStore.png')]"
+            title="The Store"
+            href="https://thestore.click/"
+            description="A bakery by Ruth Subirachs"
+            tecnologies="React, Next.js, Typescript, StrapiCMS, PWA, CSS Modules, Tailwind, Workbox, IndexedDB, Google Analytics"
+          /> */}
+        </section>
+      </div>
     </Layout>
   );
-}
+};
 
 // import Head from 'next/head';
 // import styles from '../styles/Home.module.css';

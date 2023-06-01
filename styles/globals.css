@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .card-styles {
+    @apply w-[306px] h-[363px] rounded-3xl bg-cover bg-center
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #2c2c2c;
+    --fg: #ffffff;
+    --fg-light: rgba(255, 255, 255, 0.6);
+    --overlay: #1f2021;
+    --borders-color: #313335;
+    --header-bg: rgba(24, 26, 27, 0.45);
+    --highlight: #d3b8ff;
+  }
+}
+
+/* 
 html,
 body {
   padding: 0;
@@ -10,7 +30,6 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
-  background-color: #E9E9E9;
 }
 
 * {
@@ -32,4 +51,4 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
-}
+} */

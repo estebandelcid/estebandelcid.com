@@ -1,13 +1,15 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import {ThemeButton} from './ThemeButton'
+import headerSection from "./headerSection";
 
 const name = "Esteban Del Cid";
 export const siteTitle = "Esteban Del Cid";
 
 export default function Layout({ children, home }) {
   return (
-    <div className="mt-8">
+    <div className="font-sans min-h-[900px] flex flex-col justify-around py-10">
       <Head>
         <link rel="icon" href="/edc.ico" />
         <meta name="description" content="My profile" />
@@ -23,42 +25,64 @@ export default function Layout({ children, home }) {
       <header className="flex flex-col items-center">
         {home ? (
           <>
-            {/* <Image
-              priority
-              src="/images/profile.jpg"
-              className="rounded-full w-36 h-36"
-              width={144}
-              height={144}
-              alt=""
-            /> */}
             <h1 className="text-4xl font-extrabold my-px mx-0">{}</h1>
           </>
         ) : (
           <>
-            <Link href="/">
-              <Image
-                priority
-                src="/images/profile.jpg"
-                className="rounded-full  w-[108px] h-[108px]"
-                height={108}
-                width={108}
-                alt=""
-              />
-            </Link>
-            <h2 className="text-2xl font-bol">
+            <h2 className="text-2xl font-bol pb-10">
               <Link href="/" className="text-inherit">
                 {name}
               </Link>
             </h2>
+            <Link href="/">
+              <Image
+                priority
+                src="/images/profile.jpg"
+                className="rounded-[24px]  w-[167px] h-[167px]"
+                height={167}
+                width={167}
+                alt="Profile-picture"
+              />
+            </Link>
           </>
         )}
       </header>
       <main>{children}</main>
       {!home && (
-        <div className="my-16 mx-4 mb-0 ">
-          <Link href="/">← Back to home</Link>
+        <div className="w-auto h-fit">
+          <Link
+            className="font-medium ml-9 text-[22px] text-[#E71B40]  hover:text-black dark:hover:text-white hover:underline decoration-[#E71B40] underline-offset-4"
+            href="/"
+          >
+            ← Back to home
+          </Link>
         </div>
       )}
+      <footer className="flex flex-col items-center space-y-[20px]">
+        <ThemeButton />
+        <section>
+          <ul className=" space-x-12">
+            <a
+              href="https://www.linkedin.com/in/estebandelcid/"
+              className=" hover:text-[#E71B40] hover:underline decoration-[#E71B40] underline-offset-4 text-[18px]"
+            >
+              Linkedin
+            </a>
+            <a
+              href="https://github.com/estebandelcid"
+              className=" hover:text-[#E71B40] hover:underline decoration-[#E71B40] underline-offset-4 text-[18px]"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://twitter.com/estebandelcid"
+              className=" hover:text-[#E71B40] hover:underline decoration-[#E71B40] underline-offset-4 text-[18px]"
+            >
+              Twitter
+            </a>
+          </ul>
+        </section>
+      </footer>
     </div>
   );
 }
