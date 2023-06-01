@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import {ThemeButton} from './ThemeButton'
+import ThemeButton from './ThemeButton'
 import headerSection from "./headerSection";
 
 const name = "Esteban Del Cid";

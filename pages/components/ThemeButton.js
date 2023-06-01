@@ -6,7 +6,7 @@ import { MdArrowDownward } from "react-icons/md";
 
 
 
-export const ThemeButton = () => {
+export default function ThemeButton () {
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
