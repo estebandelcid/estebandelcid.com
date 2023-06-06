@@ -13,16 +13,37 @@ export default function Layout({ children, home }) {
       <Head>
         <link rel="icon" href="/edc.ico" />
         <meta name="robots" content="all" />
-        <meta name="description" content="Portfolio from Esteban Del Cid" />
+        <meta
+          name="description"
+          content=" Hi, i´m Esteban, Front End Developer, from México to the World"
+        />
         <meta
           property="og:image"
-          content="/public/images/background-mini.jpg"
-          // content={`https://og-image.vercel.app/${encodeURI(
-          //   siteTitle
-          // )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          content="https://res.cloudinary.com/dfkvjy6fs/image/upload/v1686094239/Background/background-mini_hjd00p.jpg"
         />
+        <meta rel="canonical" href="https://estebandelcid.com" />
+        <meta name="og:type" content="website" />
+        <meta name="og:site-name" content="Esteban Del Cid" />
+        <meta name="url" content="https://estebandelcid.com" />
         <meta name="og:title" content={siteTitle} />
+        <meta property="og:url" content="https://estebandelcid.com/" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Language" content="en" />
+        <meta name="twitter:title" content="Esteban Del Cid" />
+        <meta
+          name="twitter:description"
+          content="Hi, i´m Esteban, Front End Developer, from México to the World"
+        />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:image"
+          content="https://res.cloudinary.com/dfkvjy6fs/image/upload/v1686094239/Background/background-mini_hjd00p.jpg"
+        />
+        <meta name="twitter:site" content="@estebandelcid" />
+        <meta name="twitter:author" content="Esteban Del Cid" />
+        <meta
+          property="article:author"
+          content="https://twitter.com/estebandelcid" />
       </Head>
       <header className="flex flex-col items-center">
         {home ? (
