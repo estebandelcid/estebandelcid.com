@@ -6,7 +6,7 @@ export default function ListOfCards(){
         <Card
           className=" card-styles bg-[url('../assets/mesh-lapsso.png')]"
           title="Lapsso"
-          href="https:/laps.so"
+          href="https://www.laps.so/"
           description="The place to store it all"
           tecnologies="React, Next.js, Typescript, Node.js, Prisma, tRPC, Zustand, Tailwind, ProseMirror, Websockets, ReactQuery Cypress, CI/CD, Github Actions."
         />
