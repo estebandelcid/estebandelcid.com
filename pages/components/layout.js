@@ -12,6 +12,7 @@ export default function Layout({ children, home }) {
     <div className="font-sans min-h-[900px] flex flex-col justify-around py-10">
       <Head>
         <link rel="icon" href="/edc.ico" />
+        <title>{siteTitle}</title>
         <meta name="robots" content="all" />
         <meta
           name="description"
