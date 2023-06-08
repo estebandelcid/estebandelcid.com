@@ -2,12 +2,18 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import ThemeButton from './ThemeButton'
-import headerSection from "./headerSection";
+import headerSection from "./HeaderSection";
+import React from "react";
+import Button from "./BackButton";
+
 
 const name = "Esteban Del Cid";
 export const siteTitle = "Esteban Del Cid";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home }: {
+  children: React.ReactNode
+  home?: boolean
+}) {
   return (
     <div className="font-sans min-h-[900px] flex flex-col justify-around py-10">
       <Head>
@@ -22,7 +28,7 @@ export default function Layout({ children, home }) {
           property="og:image"
           content="https://res.cloudinary.com/dfkvjy6fs/image/upload/v1686094239/Background/background-mini_hjd00p.jpg"
         />
-        <meta rel="canonical" href="https://estebandelcid.com" />
+        <link rel="canonical" href="https://estebandelcid.com" />
         <meta name="og:type" content="website" />
         <meta name="og:site-name" content="Esteban Del Cid" />
         <meta name="url" content="https://estebandelcid.com" />
@@ -44,7 +50,8 @@ export default function Layout({ children, home }) {
         <meta name="twitter:author" content="Esteban Del Cid" />
         <meta
           property="article:author"
-          content="https://twitter.com/estebandelcid" />
+          content="https://twitter.com/estebandelcid"
+        />
       </Head>
       <header className="flex flex-col items-center">
         {home ? (
@@ -54,35 +61,32 @@ export default function Layout({ children, home }) {
         ) : (
           <>
             <h2 className="text-2xl font-bol pb-10">
-              <Link href="/" className="text-inherit">
+              <Link
+                href="/"
+                className="text-3xl text-black-900 font-sans font-semibold"
+              >
                 {name}
               </Link>
             </h2>
-            <Link href="/">
-              <Image
-                priority
-                src="/images/profile.jpg"
-                className="rounded-[24px]  w-[167px] h-[167px]"
-                height={167}
-                width={167}
-                alt="Profile-picture"
-              />
-            </Link>
+            <div className="w-[167px] h-[167px]  ">
+              <Link href="/">
+                <Image
+                  priority
+                  src="/images/profile-pic.jpg"
+                  className="h-[167px] w-[167px] rounded-[24px]"
+                  height={167}
+                  width={167}
+                  alt="Profile-picture"
+                  style={{ objectFit: "cover" }}
+                />
+              </Link>
+            </div>
           </>
         )}
       </header>
       <main>{children}</main>
-      {!home && (
-        <div className="w-auto h-fit">
-          <Link
-            className="font-medium ml-9 text-[22px] text-[#E71B40]  hover:text-black dark:hover:text-white hover:underline decoration-[#E71B40] underline-offset-4"
-            href="/"
-          >
-            ← Back to home
-          </Link>
-        </div>
-      )}
-      <footer className="flex flex-col items-center space-y-[20px]">
+      {!home && <Button href="/">{"Back to home"}</Button>}
+      <footer className="flex flex-col items-center space-y-[20px] mt-8">
         <ThemeButton />
         <section>
           <ul className=" space-x-12">

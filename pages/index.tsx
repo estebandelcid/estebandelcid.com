@@ -4,11 +4,11 @@ import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import DateFormat from "./components/date";
 import Card from "./components/Card";
-import HeaderSection from "./components/headerSection";
+import HeaderSection from "./components/HeaderSection";
 import ListOfCards from "./components/ListOfCards";
+import { GetStaticProps } from "next";
 
-
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async() => {
   const allPostsData = getSortedPostsData();
   return {
     props: {
@@ -17,7 +17,11 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData }: {allPostsData:{
+  date: string 
+  title: string 
+  id: string}[]
+}) {
 
   return (
     <Layout home>
@@ -69,7 +73,7 @@ export default function Home({ allPostsData }) {
 
       <div className=" h-auto w-screen ">
         <section className=" w-full h-full grid grid-cols-1 gap-8 mb-8 items-center place-items-center text-[22px] ">
-          {/* prove ListOfCards  */}
+          {/* proven ListOfCards  */}
           <ListOfCards/>
 
           {/* probando componente card */}

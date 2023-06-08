@@ -37,7 +37,7 @@ export default function ThemeButton () {
             </button>
           )} */}
       <select
-        className="relative bg-inherit outline-none w-[6rem] appearance-none cursor-pointer border border-[#E71B40] hover:text-[#e71b40] hover:border-black dark:hover:border-white rounded-[24px] p-2 "
+        className="relative bg-inherit outline-none w-[6rem] appearance-none cursor-pointer border-2 border-[#E71B40] hover:text-[#e71b40] hover:border-black dark:hover:border-white rounded-[24px] p-2 "
         value={theme}
         onChange={(e) => setTheme(e.target.value)}
       >
