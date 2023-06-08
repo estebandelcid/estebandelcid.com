@@ -1,4 +1,4 @@
-import Button from "./BackButton";
+import Button from "./Button";
 
 export default function HeaderSection(){
     return (
