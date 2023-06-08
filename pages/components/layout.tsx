@@ -2,9 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import ThemeButton from './ThemeButton'
-import headerSection from "./HeaderSection";
 import React from "react";
-import Button from "./BackButton";
+import Button from "./Button";
 
 
 const name = "Esteban Del Cid";
