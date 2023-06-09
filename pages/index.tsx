@@ -1,21 +1,19 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "./components/layout";
+import Layout, { siteTitle } from "../components/Layout";
 import { getSortedPostsData } from "../lib/posts";
-import Link from "next/link";
-import DateFormat from "./components/date";
-import Card from "./components/Card";
-import HeaderSection from "./components/HeaderSection";
-import ListOfCards from "./components/ListOfCards";
+import DateFormat from "../lib/date";
+import HeaderSection from "../components/HeaderSection";
+import ListOfCards from "../components/ListOfCards";
 import { GetStaticProps } from "next";
 
-export const getStaticProps: GetStaticProps = async() => {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
+// export const getStaticProps: GetStaticProps = async() => {
+//   const allPostsData = getSortedPostsData();
+//   return {
+//     props: {
+//       allPostsData,
+//     },
+//   };
+// }
 
 export default function Home({ allPostsData }: {allPostsData:{
   date: string 
