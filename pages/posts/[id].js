@@ -1,7 +1,7 @@
-import Layout from "../components/layout";
+import Layout from '../../components/Layout'
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
-import DateFormat from "../components/date";
+import DateFormat from "../../lib/date";
 
 export async function getStaticProps({ params }) {
     //Add the 'await' keyword like this;
