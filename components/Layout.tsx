@@ -4,6 +4,8 @@ import Link from "next/link";
 import ThemeButton from './ThemeButton'
 import React from "react";
 import Button from "./Button";
+import Footer from "./Footer";
+import HeaderSection from "./HeaderSection";
 
 
 const name = "Esteban Del Cid";
@@ -55,7 +57,7 @@ export default function Layout({ children, home }: {
       <header className="flex flex-col items-center">
         {home ? (
           <>
-            <h1 className="text-4xl font-extrabold my-px mx-0">{}</h1>
+            <HeaderSection/>
           </>
         ) : (
           <>
@@ -85,31 +87,7 @@ export default function Layout({ children, home }: {
       </header>
       <main>{children}</main>
       {!home && <Button href="/">{"Back to home"}</Button>}
-      <footer className="flex flex-col items-center space-y-[20px] mt-8">
-        <ThemeButton />
-        <section>
-          <ul className=" space-x-12">
-            <a
-              href="https://www.linkedin.com/in/estebandelcid/"
-              className=" hover:text-[#E71B40] hover:underline decoration-[#E71B40] underline-offset-4 text-[18px]"
-            >
-              Linkedin
-            </a>
-            <a
-              href="https://github.com/estebandelcid"
-              className=" hover:text-[#E71B40] hover:underline decoration-[#E71B40] underline-offset-4 text-[18px]"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://twitter.com/estebandelcid"
-              className=" hover:text-[#E71B40] hover:underline decoration-[#E71B40] underline-offset-4 text-[18px]"
-            >
-              Twitter
-            </a>
-          </ul>
-        </section>
-      </footer>
+      <Footer/>
     </div>
   );
 }

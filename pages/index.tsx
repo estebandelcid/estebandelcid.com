@@ -5,6 +5,10 @@ import DateFormat from "../lib/date";
 import HeaderSection from "../components/HeaderSection";
 import ListOfCards from "../components/ListOfCards";
 import { GetStaticProps } from "next";
+import { ProjectCard } from "../components/ProjectCard";
+import projects from "../lib/projects";
+import Link from "next/link";
+
 
 // export const getStaticProps: GetStaticProps = async() => {
 //   const allPostsData = getSortedPostsData();
@@ -14,6 +18,7 @@ import { GetStaticProps } from "next";
 //     },
 //   };
 // }
+
 
 export default function Home({ allPostsData }: {allPostsData:{
   date: string 
@@ -26,33 +31,12 @@ export default function Home({ allPostsData }: {allPostsData:{
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <HeaderSection/>
 
-{/* 
-      <section className=" mx-8 text-black-900 w-auto h-auto flex-col justify-center font-sans font-semibold">
-        <p className="text-center text-3xl">
-          Hi, i´m Esteban,
-          <br />
-          Front End Developer,
-          <br />
-          from México to the
-          <br />
-          World
-        </p>
-        <section className=" text-green-500 font-light">
-          <p className=" mb-10 text-xl">{"<Link>"}</p>
-          <Link
-            className=" font-medium ml-9 text-[22px] text-[#E71B40] hover:text-white hover:underline decoration-[#E71B40] underline-offset-4"
-            href={`/posts/aboutMe`}
-          >
-            More about me
-          </Link>
-          <br />
-          <p className=" mt-10 text-xl">{"</Link>"}</p>
-        </section>
-      </section> */}
-
-      {/* Blog seccion  */}
+      <div className=" h-auto w-screen ">
+        <section className=" w-full h-full grid grid-cols-1 gap-8 mb-8 items-center place-items-center text-[22px] ">
+          <ListOfCards />
+          
+           {/* Blog seccion  */}
       {/* <section className="text-xl leading-5 pt-px">
         <h2 className="text-xl leading-[1.4px] my-6 mx-0">Blog</h2>
         <ul className=" list-none p-0 m-0">
@@ -69,33 +53,7 @@ export default function Home({ allPostsData }: {allPostsData:{
         </ul>
       </section> */}
 
-      <div className=" h-auto w-screen ">
-        <section className=" w-full h-full grid grid-cols-1 gap-8 mb-8 items-center place-items-center text-[22px] ">
-          {/* proven ListOfCards  */}
-          <ListOfCards/>
-
-          {/* probando componente card */}
-          {/* <Card
-            className=" card-styles bg-[url('../assets/mesh-lapsso.png')]"
-            title="Lapsso"
-            href="https:/laps.so"
-            description="The place to store it all"
-            tecnologies="React, Next.js, Typescript, Node.js, Prisma, tRPC, Zustand, Tailwind, ProseMirror, Websockets, ReactQuery Cypress, CI/CD, Github Actions."
-          />
-          <Card
-            className="card-styles bg-[url('../public/images/mesh-petgram.png')]"
-            title="Petgram"
-            href="https://petgram-edelcid.vercel.app/"
-            description="Proyect about photos of pets"
-            tecnologies="React, Next.js, Typescript, StrapiCMS, PWA, CSS Modules, Tailwind, Workbox, IndexedDB, Google Analytics"
-          />
-          <Card
-            className="card-styles bg-[url('../assets/mesh-theStore.png')]"
-            title="The Store"
-            href="https://thestore.click/"
-            description="A bakery by Ruth Subirachs"
-            tecnologies="React, Next.js, Typescript, StrapiCMS, PWA, CSS Modules, Tailwind, Workbox, IndexedDB, Google Analytics"
-          /> */}
+         
         </section>
       </div>
     </Layout>
