@@ -4,7 +4,7 @@ import ButtonTrigger from "./ButtonTrigger";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-center space-y-[20px] mt-8">
+    <footer className="flex flex-col items-center space-y-[2rem] mt-24">
       <ThemeButton />
       <section className="w-full flex justify-center space-x-12">
         <ButtonTrigger href={LinkedinUrl}>{"Linkedin"}</ButtonTrigger>

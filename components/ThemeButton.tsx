@@ -17,7 +17,7 @@ export default function ThemeButton () {
 
     const currentTheme = theme === 'system' ? systemTheme : theme;
   return (
-    <label className="relative  ">
+    <label className="relative">
       {/* className=" relative flex justify-center items-center w-[7rem] h-[2rem] space-x-2 " */}
       {/* {currentTheme === "dark" ? (
             <button
@@ -37,20 +37,19 @@ export default function ThemeButton () {
             </button>
           )} */}
       <select
-        className="relative bg-inherit outline-none w-[6rem] appearance-none cursor-pointer border-2 border-[#E71B40] hover:text-[#e71b40] hover:border-black dark:hover:border-white rounded-[24px] p-2 "
+        className="text-xl relative transition duration-300 bg-inherit outline-none w-[7rem] appearance-none cursor-pointer hover:text-[#e71b40] dark:hover:border-white rounded-[24px] p-2 [#E71B40] hover:shadow-[0px_0px_90px_0.5px_] max-[920px]:shadow-[0px_0px_10px_1px]"
         value={theme}
         onChange={(e) => setTheme(e.target.value)}
       >
-        <option className="" value="system">
+        <option value="system">
           System
         </option>
         <option value="dark">Dark</option>
         <option value="light">Light</option>
       </select>
-      <span className=" absolute left-[4.5rem] pointer-events-none flex items-center bottom-2.5">
+      <span className=" absolute left-[5.5rem] pointer-events-none flex items-center bottom-2.5">
         <MdArrowDownward
           fill="#E71B40"
-          className=" "
           size="20px"
         />
       </span>

@@ -33,9 +33,8 @@ export default function Home({ allPostsData }: {allPostsData:{
       </Head>
 
       <div className=" h-auto w-screen ">
-        <section className=" w-full h-full grid grid-cols-1 gap-8 mb-8 items-center place-items-center text-[22px] ">
+        <section className=" w-full h-full mb-8 items-center place-items-center text-[22px] ">
           <ListOfCards />
-          
            {/* Blog seccion  */}
       {/* <section className="text-xl leading-5 pt-px">
         <h2 className="text-xl leading-[1.4px] my-6 mx-0">Blog</h2>

@@ -61,27 +61,20 @@ export default function Layout({ children, home }: {
           </>
         ) : (
           <>
-            <h2 className="text-2xl font-bol pb-10">
-              <Link
-                href="/"
-                className="text-3xl text-black-900 font-sans font-semibold"
-              >
+            {/* <p className="text-4xl font-semibold pb-10">
                 {name}
-              </Link>
-            </h2>
-            <div className="w-[167px] h-[167px]  ">
-              <Link href="/">
+            </p>
+            <div className="w-[167px] h-[167px]  lg:w-[306px] lg:h-[306px]">
                 <Image
                   priority
                   src="/images/profile-pic.jpg"
-                  className="h-[167px] w-[167px] rounded-[24px]"
+                  className="h-[167px] w-[167px] lg:w-[306px] lg:h-[306px] rounded-[24px]"
                   height={167}
                   width={167}
                   alt="Profile-picture"
                   style={{ objectFit: "cover" }}
                 />
-              </Link>
-            </div>
+            </div> */}
           </>
         )}
       </header>
