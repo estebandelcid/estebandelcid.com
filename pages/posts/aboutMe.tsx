@@ -7,7 +7,7 @@ export default function FirstPost() {
   return (
     <Layout>
       <div className="w-auto h-auto flex flex-col items-center">
-        <p className="w-auto text-4xl pb-8 lg:text-6xl font-semibold lg:pb-32">Esteban Del Cid</p>
+        <p className="w-auto text-4xl pb-8 md:text-5xl lg:text-6xl font-semibold lg:pb-32">Esteban Del Cid</p>
         <div className="flex flex-col lg:flex-row justify-center items-center">
           <div className="w-[267px] h-[267px]  lg:min-w-[400px] lg:h-[377px] ">
             <Image
@@ -24,13 +24,13 @@ export default function FirstPost() {
             <title>About Me</title>
           </Head>
           <section className="px-10 pt-8 pb-16 text-[18px] font-medium flex flex-col space-y-4">
-            <h1 className="text-[28px] font-semibold lg:text-4xl">About Me</h1>
+            <h1 className="text-[28px] font-semibold md:text-4xl lg:text-4xl">About Me</h1>
             <p>
-              I’m excited to continue mi work experience and face new challenges
+              I’m excited to continue my work experience and face new challenges
               in the passionate world of technology. One of my goals is to be
               part of a tech company where I can put all my knowledges in
               practice that I get from my studies, jobs and continue learning in
-              a work environment. I’ma frontend developer student and I love the
+              a work environment. I’m a frontend developer student and I love the
               world of technology. Work hard every day to improve my skills and
               I’ve the necessary abilities to carry out projects in the best
               way.
@@ -43,7 +43,7 @@ export default function FirstPost() {
             </p>
 
             <p>
-              Begin aware that there is always more to learn, I constantly
+              Being aware that there is always more to learn, I constantly
               search new opportunities to improve my skills and keep up to date
               of the latest trends in web development.
             </p>

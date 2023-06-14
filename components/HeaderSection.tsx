@@ -3,7 +3,7 @@ import Button from "./Button";
 export default function HeaderSection(){
     return (
       <section className=" mx-8 w-auto h-auto flex-col justify-center font-sans font-semibold">
-        <p className="text-center text-3xl md:text-[45px] lg:text-[65px] leading-none">
+        <p className="text-center text-3xl md:text-5xl lg:text-[65px] leading-none">
           Hi, i´m Esteban,
           <br />
           Front End Developer,
