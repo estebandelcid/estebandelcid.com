@@ -18,22 +18,24 @@ export default function Layout({ children, home }: {
   return (
     <div className="font-sans min-h-[900px] flex flex-col justify-around py-10">
       <Head>
-        <link rel="icon" href="/edc.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <title>{siteTitle}</title>
         <meta name="robots" content="all" />
         <meta
           name="description"
           content=" Hi, i´m Esteban, Front End Developer, from México to the World"
         />
+        <link rel="canonical" href="https://estebandelcid.com" />
+
         <meta
           property="og:image"
           content="https://res.cloudinary.com/dfkvjy6fs/image/upload/v1686734638/background-mini2_q5h6q0.jpg"
         />
-        <link rel="canonical" href="https://estebandelcid.com" />
         <meta name="og:type" content="website" />
         <meta name="og:site-name" content="Esteban Del Cid" />
         <meta name="url" content="https://estebandelcid.com" />
         <meta name="og:title" content={siteTitle} />
+        <meta name="og:description" content='Hi, i´m Esteban, Front End Developer, from México to the World' />
         <meta property="og:url" content="https://estebandelcid.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Language" content="en" />
@@ -53,6 +55,24 @@ export default function Layout({ children, home }: {
           property="article:author"
           content="https://twitter.com/estebandelcid"
         />
+        <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/public/apple-touch-icon.png"
+      />
+       <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/public/favicon-32x32.png"
+      />
+         <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/public/favicon-16x16.png"
+      />
+       <link rel="manifest" href="/public/site.webmanifest" />
       </Head>
       <header className="flex flex-col items-center">
         {home ? (
