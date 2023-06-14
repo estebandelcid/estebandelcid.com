@@ -12,7 +12,7 @@ export const ProjectCard = ({
   links,
 }: TProject) => {
   return (
-    <div className="card-styles opacity-90 transition ease-in-out delay-50 hover:translate-y-1 hover:scale-110 hover:opacity-100 hover:shadow-neutral-500/80 hover:shadow-[0px_0px_90px_5px] duration-300" style={{ backgroundImage: `url(${bgImg})`}}>
+    <div className="card-styles opacity-90 transition ease-in-out delay-50 hover:translate-y-1 hover:scale-110 hover:opacity-100 hover:shadow-neutral-500/60 hover:shadow-[0px_0px_90px_2px] duration-300" style={{ backgroundImage: `url(${bgImg})`}}>
       <div className="flex flex-col  w-[306] h-full  px-6 py-6 justify-around">
         <div>
           <a
