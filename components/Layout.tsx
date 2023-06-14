@@ -27,7 +27,7 @@ export default function Layout({ children, home }: {
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/dfkvjy6fs/image/upload/v1686094239/Background/background-mini_hjd00p.jpg"
+          content="https://res.cloudinary.com/dfkvjy6fs/image/upload/v1686734638/background-mini2_q5h6q0.jpg"
         />
         <link rel="canonical" href="https://estebandelcid.com" />
         <meta name="og:type" content="website" />
