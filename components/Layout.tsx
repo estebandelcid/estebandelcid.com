@@ -1,7 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import ThemeButton from './ThemeButton'
 import React from "react";
 import Button from "./Button";
 import Footer from "./Footer";
