@@ -23,9 +23,9 @@ export default function Card({
           >
             {title}
           </a>
-          <p className=" font-normal text-[#3F3F3F]">{description}</p>
+          <p className=" font-normal text-black/60">{description}</p>
         </div>
-        <p className=" font-extralight text-[#3F3F3F] text-base ">
+        <p className=" font-extralight text-black/60 text-base ">
           {technologies}
         </p>
       </div>

@@ -22,9 +22,9 @@ export const ProjectCard = ({
           >
             {title}
           </a>
-          <p className=" font-normal text-[#3F3F3F]">{description}</p>
+          <p className=" font-normal text-black/60">{description}</p>
         </div>
-        <p className=" font-extralight text-[#3F3F3F] text-base ">{tech}</p>
+        <p className=" font-extralight text-black/60 text-base ">{tech}</p>
         <div>
           {links.map(({ url, title, }: TProjectLink) => (
             <ButtonCards href={url} key={url} icon={Github}>

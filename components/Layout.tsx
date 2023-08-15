@@ -13,14 +13,14 @@ export default function Layout({ children, home }: {
   home?: boolean
 }) {
   return (
-    <div className="font-sans min-h-[900px] flex flex-col justify-around py-10">
+    <div className="font-sans min-h-[900px] flex flex-col justify-around pb-10 pt-40">
       <Head>
         {/* <link rel="icon" href="/favicon.ico" /> */}
         <title>{siteTitle}</title>
         <meta name="robots" content="all" />
         <meta
           name="description"
-          content=" Hi, i´m Esteban, Front End Developer, from México to the World"
+          content=" Hi, I´m Esteban, Front End Developer, from México to the World"
         />
         <link rel="canonical" href="https://estebandelcid.com" />
 
@@ -32,14 +32,14 @@ export default function Layout({ children, home }: {
         <meta name="og:site-name" content="Esteban Del Cid" />
         <meta name="url" content="https://estebandelcid.com" />
         <meta name="og:title" content={siteTitle} />
-        <meta name="og:description" content='Hi, i´m Esteban, Front End Developer, from México to the World' />
+        <meta name="og:description" content='Hi, I´m Esteban, Front End Developer, from México to the World' />
         <meta property="og:url" content="https://estebandelcid.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Language" content="en" />
         <meta name="twitter:title" content="Esteban Del Cid" />
         <meta
           name="twitter:description"
-          content="Hi, i´m Esteban, Front End Developer, from México to the World"
+          content="Hi, I´m Esteban, Front End Developer, from México to the World"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta

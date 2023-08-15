@@ -13,7 +13,7 @@ const projects: TProject[] = [
     slug: "petgram",
     bgImg: "/images/mesh-petgram.png",
     title: "Petgram",
-    description: "Proyect about photos of pets.",
+    description: "Project about photos of pets.",
     tech: "React, Node.js, Cypress, React Apollo, GraphQL, Styled-components, Workbox.",
     projectUrl: "https://petgram-edelcid.vercel.app/",
     links: [

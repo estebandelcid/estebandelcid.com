@@ -13,7 +13,7 @@ export default function ButtonCards({
   return (
     <button className="w-auto h-fit flex items-center  ">
       <Link
-        className="font-extralight text-base  text-[#3F3F3F]  flex items-center hover:text-[#fff] transition duration-300 "
+        className="font-extralight text-base  text-black/60 flex items-center hover:text-[#fff] transition duration-300 "
         href={href}
         target='_blank'
       >
