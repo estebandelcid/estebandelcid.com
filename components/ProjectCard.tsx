@@ -2,6 +2,7 @@ import Button from "./Button";
 import Image from "next/image";
 import ButtonCards from './ButtonCards';
 import Github from "./icons/GitHub";
+import { link } from "fs";
 
 export const ProjectCard = ({
   title,
@@ -12,26 +13,32 @@ export const ProjectCard = ({
   links,
 }: TProject) => {
   return (
-    <div className="card-styles opacity-90 transition ease-in-out delay-50 hover:translate-y-1 hover:scale-110 hover:opacity-100 hover:shadow-neutral-500/40 hover:shadow-[0px_0px_90px_1px] duration-300" style={{ backgroundImage: `url(${bgImg})`}}>
-      <div className="flex flex-col  w-[306] h-full  px-6 py-6 justify-around">
+    <div className="relative card-styles opacity-90 transition ease-in-out delay-50 hover:translate-y-1 hover:scale-110 hover:opacity-100 hover:shadow-neutral-500/40 hover:shadow-[0px_0px_90px_1px] dark:hover:shadow-none duration-300" style={{ backgroundImage: `url(${bgImg})`}}>
+      <div className="flex flex-col w-full h-full  px-6 py-6 justify-around">
         <div>
-          <a
-            href={projectUrl}
-            target='_blank'
-            className="no-underline hover:text-white hover:underline text-[26px] font-medium "
+          <p className="text-[26px] font-medium "
           >
             {title}
-          </a>
+          </p>
           <p className=" font-normal text-black/60">{description}</p>
         </div>
         <p className=" font-extralight text-black/60 text-base ">{tech}</p>
-        <div>
+
+        
+
+        <div className="z-10">
           {links.map(({ url, title, }: TProjectLink) => (
             <ButtonCards href={url} key={url} icon={Github}>
               {title}
             </ButtonCards>
           ))}
         </div>
+          {/* sirve para que no tenga tema con la hidration  */}
+          <div className="w-full h-full absolute bg-transparent rounded-3xl top-0 right-0 left-0">
+        <a href={projectUrl} target='_blank' className="w-[306px] h-full">
+          <div className="h-full"></div>
+        </a>
+      </div>
       </div>
     </div>
   );

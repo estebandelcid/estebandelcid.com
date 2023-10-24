@@ -15,11 +15,11 @@ export default function Card({
 }) {
   return (
     <div className={className}>
-      <div className="flex flex-col  w-[306px] h-full  px-6 py-6 justify-around">
+      <div className="flex flex-col w-[306px] h-full px-6 py-6 justify-around">
         <div>
           <a
             href={href}
-            className="no-underline hover:text-white hover:underline text-[22px] font-medium "
+            className="no-underline hover:text-white hover:underline text-[22px] font-medium"
           >
             {title}
           </a>
