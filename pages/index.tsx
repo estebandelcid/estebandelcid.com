@@ -33,7 +33,7 @@ export default function Home({ allPostsData }: {allPostsData:{
       </Head>
 
       <div className=" h-auto w-screen ">
-        <section className=" w-full h-full mb-8 items-center place-items-center text-[22px] ">
+        <section className=" w-full h-full grid mb-8 items-center place-items-center text-[22px] ">
           <ListOfCards />
            {/* Blog seccion  */}
       {/* <section className="text-xl leading-5 pt-px">

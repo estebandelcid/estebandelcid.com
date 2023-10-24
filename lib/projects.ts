@@ -14,11 +14,25 @@ const projects: TProject[] = [
     bgImg: "/images/mesh-petgram.png",
     title: "Petgram",
     description: "Project about photos of pets.",
-    tech: "React, Node.js, Cypress, React Apollo, GraphQL, Styled-components, Workbox.",
+    tech: "React, Vercel, Cypress, React Apollo, GraphQL, Styled-components, Workbox.",
     projectUrl: "https://petgram-edelcid.vercel.app/",
     links: [
       {
         url: "https://github.com/estebandelcid/Proyect-Gram",
+        title: "Github (Frontend)",
+      },
+    ],
+  },
+  {
+    slug: "todoapp",
+    bgImg: "/images/mesh-todo.png",
+    title: "To-Do App",
+    description: "Simple app to help to organize your daily tasks and easy to use.",
+    tech: "React, Tailwind, GH-Pages",
+    projectUrl: "https://estebandelcid.github.io/To-Do/",
+    links: [
+      {
+        url: "https://github.com/estebandelcid/To-Do",
         title: "Github (Frontend)",
       },
     ],
@@ -37,6 +51,7 @@ const projects: TProject[] = [
       },
     ],
   },
+ 
 ];
 
 export default projects
