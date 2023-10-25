@@ -7,7 +7,7 @@ My personal Porfolio.
 ## Build using:
 - Framework: [Next.js](https://nextjs.org/)
 
-    - [Tailwind](https://tailwindcss.com/docs/installation)
+    - [Tailwind](https://nextjs.org/docs/app/building-your-application/styling/tailwind-css)
     - [TypeScript](https://nextjs.org/docs/pages/building-your-application/configuring/typescript)
 
 - Designed on Figma
