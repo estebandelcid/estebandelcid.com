@@ -1,4 +1,3 @@
-import Button from "./Button";
 
 export default function HeaderSection(){
     return (
@@ -16,13 +15,6 @@ export default function HeaderSection(){
           <br />
           World
         </p>
-        {/* <section className=" text-green-500 text-xl md:text-3xl font-light m-8 md:mx-8 md:mb-16 lg:mb-28 lg:text-[34.6px] space-y-4 lg:space-y-8">
-          <p>{"<Link>"}</p>
-          <Button href={`/posts/aboutMe`}>{"More about me"}</Button>
-          <p>{"</Link>"}</p>
-        </section> */}
       </section>
     );
 }
-
-// f74768

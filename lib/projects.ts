@@ -36,22 +36,7 @@ const projects: TProject[] = [
         title: "Github (Frontend)",
       },
     ],
-  },
-  {
-    slug: "thestore",
-    bgImg: "/images/mesh-theStore.png",
-    title: "The Store",
-    description: "A bakery by Ruth Subirachs",
-    tech: "React, Strapi CMS, Cloudflare, ESLint, CSS",
-    projectUrl: "https://thestore.click/",
-    links: [
-      {
-        url: "https://github.com/estebandelcid/Confi-Merch",
-        title: "Github (Frontend)",
-      },
-    ],
-  },
- 
+  }, 
 ];
 
 export default projects

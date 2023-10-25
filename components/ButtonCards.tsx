@@ -4,11 +4,9 @@ import { AiFillGithub } from "react-icons/ai";
 export default function ButtonCards({
   href,
   children,
-  icon
 }: {
   children: string;
   href: string;
-  icon: any
 }) {
   return (
     <button className="w-auto h-fit flex items-center  ">
