@@ -8,4 +8,9 @@
   }
 
 }
+@layer utilities {
+  .bg-text {
+    background-image: url(../public/images/mesh-todo.png);
+  }
+}
 
