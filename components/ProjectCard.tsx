@@ -1,9 +1,4 @@
-import Button from "./Button";
-import Image from "next/image";
 import ButtonCards from './ButtonCards';
-import Github from "./icons/GitHub";
-import { link } from "fs";
-
 export const ProjectCard = ({
   title,
   bgImg,
@@ -32,9 +27,9 @@ export const ProjectCard = ({
 
         <div className="z-10">
           {links.map(({ url, title, }: TProjectLink) => (
-            <ButtonCards href={url} key={url} icon={Github}>
+            <ButtonCards href={url} key={url} >
               {title}
-            </ButtonCards>
+            </ButtonCards> 
           ))}
         </div>
         
@@ -47,10 +42,3 @@ export const ProjectCard = ({
     </div>
   );
 };
-
-// const style: {} = {
-//   background-image: 'https://i.etsystatic.com/27043408/r/il/ed7ac3/3538052412/il_fullxfull.3538052412_59ge.jpg'
-// }
-
-
-// https://i.etsystatic.com/27043408/r/il/ed7ac3/3538052412/il_fullxfull.3538052412_59ge.jpg
