@@ -31,7 +31,7 @@ export default function ThemeButton () {
         <option value="dark">Dark</option>
         <option value="light">Light</option>
       </select>
-      <span className=" absolute left-[5.2rem] pointer-events-none flex items-center bottom-2.5 top-3">
+      <span className=" absolute left-[5.1rem] pointer-events-none flex items-center bottom-2.5 top-3">
         <MdArrowDownward 
           fill="#E71B40"
           size="1.25rem"
