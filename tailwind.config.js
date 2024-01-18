@@ -12,12 +12,12 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'b-text-move': 'b-text-move 5s ease-in-out infinite',
-        'bmove': 'bmove 7s ease-in-out infinite',
+        'b-text-move': 'b-text-move 3s ease-in-out infinite',
+        'bmove': 'bmove 3s ease-in-out infinite',
       },
       keyframes: {
         'b-text-move': {
-          "0%": { "background-position": "20% 50% " },
+          "0%": { "background-position": "20% 50%" },
           "50%": { "background-position": "100% 20%", 'backgruond-size': '150%'},
           "100%": { "background-position": "20% 50%" },
         },
