@@ -14,6 +14,7 @@ export default function ButtonCards({
         className="font-extralight text-base  text-black/60 flex items-center hover:text-[#fff] transition duration-300 "
         href={href}
         target='_blank'
+        aria-label={`Open the project repository on GitHub ${href}`}
       >
         <span className="relative mr-2 ">
           <AiFillGithub />
