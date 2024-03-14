@@ -14,7 +14,7 @@ const projects: TProject[] = [
     bgImg: "/images/mesh-petgram.png",
     title: "Petgram",
     description: "Project about photos of pets.",
-    tech: "React, Vercel, Cypress, React Apollo, GraphQL, Styled-components, Workbox.",
+    tech: "React, Vercel, Cypress, React Apollo, GraphQL, Styled-components.",
     projectUrl: "https://petgram-edelcid.vercel.app/",
     links: [
       {
