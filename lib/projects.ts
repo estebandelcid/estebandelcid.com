@@ -1,13 +1,32 @@
 
 const projects: TProject[] = [
   {
-    slug: "lapsso",
-    bgImg: "/images/mesh-lapsso.png",
-    title: "Lapsso",
-    description: "The place to store it all.",
-    tech: "React, Next.js, Typescript, Node.js, Prisma, tRPC, Zustand, Tailwind, ProseMirror, Websockets, ReactQuery Cypress, CI/CD, Github Actions.",
-    projectUrl: "https://www.laps.so",
-    links: [],
+    slug: "todoapp",
+    bgImg: "/images/mesh-todo.png",
+    title: "To-Do App",
+    description: "Simple app to help to organize your daily tasks and easy to use.",
+    tech: "React, TailwindCSS, GH-Pages, Node.js, GitHub.",
+    projectUrl: "https://estebandelcid.github.io/To-Do/",
+    links: [
+      {
+        url: "https://github.com/estebandelcid/To-Do",
+        title: "Github (Frontend)",
+      },
+    ],
+  }, 
+  {
+    slug: "shop",
+    bgImg: "/images/mesh-shop.png",
+    title: "Shop-e",
+    description: "Practice of an e-commerce",
+    tech: "React, Vite.js, Node.js, React Router Dom, TailwindCSS, Github, Netlify.",
+    projectUrl: "http://ecommercedc.netlify.app",
+    links: [
+      {
+        url: "https://github.com/estebandelcid/e-commerce",
+        title: "Github (Frontend)",
+      },
+    ],
   },
   {
     slug: "petgram",
@@ -23,20 +42,6 @@ const projects: TProject[] = [
       },
     ],
   },
-  {
-    slug: "todoapp",
-    bgImg: "/images/mesh-todo.png",
-    title: "To-Do App",
-    description: "Simple app to help to organize your daily tasks and easy to use.",
-    tech: "React, Tailwind, GH-Pages",
-    projectUrl: "https://estebandelcid.github.io/To-Do/",
-    links: [
-      {
-        url: "https://github.com/estebandelcid/To-Do",
-        title: "Github (Frontend)",
-      },
-    ],
-  }, 
 ];
 
 export default projects
