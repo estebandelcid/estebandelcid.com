@@ -8,54 +8,52 @@ export const WorkSection = ({
   description,
   tech,
   video,
-  imgs
+  imgs,
 }: TWorks) => {
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-col w-full h-full px-6 py-8 justify-around">
-        <div className="pb-4">
-          <p className="text-2xl font-semibold   text-black/80">{company}</p>
-          <p className="text-2xl font-semibold   text-black/60">{role}</p>
-        </div>
-        <p className="font-normal text-black/60 pb-4">{description}</p>
-        <section className="flex flex-col gap-4">
-          {video && (
-            <video
-              className="rounded-sm max-w-full mx-auto"
-              src={video}
-              autoPlay
-              loop
-              muted
-            ></video>
-          )}
-
-          <figure className="w-full flex flex-wrap gap-4">
-            {imgs &&
-              imgs.map((img) => (
-                <img
-                  key={img.src}
-                  className="max-h-60 pb-4 min-w-fit object-cover rounded-sm"
-                  src={img.src}
-                  alt={company}
-                />
-              ))}
-          </figure>
-        </section>
-
-        <p className="font-extralight text-black/40 text-sm pb-4">
-          Technologies used: {tech}
-        </p>
-        <div className="w-full h-full absolute bg-transparent rounded-3xl top-0 right-0 left-0">
-          <a
-            href={workUrl}
-            target="_blank"
-            aria-label={`Open ${company} project page.`}
-            className="w-[306px] h-full"
-          >
-            <div className="h-full"></div>
-          </a>
-        </div>
-      </div>
+    <div className="flex flex-col px-6 py-4">
+      <p className="text-2xl font-semibold text-black/80">{company}</p>
+      <p className="text-2xl font-semibold text-black/60">{role}</p>
+      <p className="font-normal text-black/60 pb-4">{description}</p>
+      <section className="max-w-full flex flex-col gap-2">
+        {video && (
+          <video
+            className="rounded-sm mx-auto"
+            src={video}
+            autoPlay
+            loop
+            muted
+          ></video>
+        )}
+        <figure className="w-full flex flex-wrap gap-2">
+          {imgs &&
+            imgs.map((img) => (
+              <img
+                key={img.src}
+                className="max-h-60 min-w-fit object-cover rounded-sm"
+                src={img.src}
+                alt={company}
+              />
+            ))}
+        </figure>
+      </section>
+      <section className="pb-2">
+        {workUrl &&
+          workUrl.map((work) => (
+            <a
+              key={work.title}
+              href={work.url}
+              target="_blank"
+              aria-label={`Open ${company} project page.`}
+              className="italic text-base underline underline-offset-2 text-black/60 decoration-black/20 hover:decoration-black/60 transition-all duration-300"
+            >
+              {work.title}
+            </a>
+          ))}
+      </section>
+      <p className="font-extralight text-black/40 text-sm">
+        Technologies used: {tech}
+      </p>
     </div>
   );
 };

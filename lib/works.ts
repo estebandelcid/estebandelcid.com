@@ -2,15 +2,19 @@
 const works: TWorks[] = [
   {
     company: "Metria",
-    imgs: [
-      {src: "/images/profile.jpg"},
-      {src: "/images/profile-pic.jpg"},
-    ],
     video: "/videos/sizeComponent.mp4",
+    imgs: [
+      {src: "/images/mesh-shop.png"},
+      {src: "/images/mesh-shop.png"},
+      {src: "/images/mesh-shop.png"},
+      {src: "/images/mesh-shop.png"},
+    ],
     role: "Front end Developer",
     description: "Super cool description of my role in the company",
     tech: "React, TailwindCSS, GH-Pages, Node.js, GitHub.",
-    workUrl: "https://estebandelcid.github.io/To-Do/",
+    workUrl: [
+      {url: "https://anafora.mx", title: "Anafora homepage"},
+    ]
   }, 
   {
     company: "F&M Projects",
@@ -20,7 +24,9 @@ const works: TWorks[] = [
       {src: "/images/mesh-shop.png"},
     ],
     tech: "React, TailwindCSS, GH-Pages, Node.js, GitHub.",
-    workUrl: "https://estebandelcid.github.io/To-Do/",
+    workUrl: [
+      {url:  "https://www.linkedin.com/company/fymp/?originalSubdomain=mx", title: "F&M Projects LinkedIn"},
+    ]
   },
 ];
 

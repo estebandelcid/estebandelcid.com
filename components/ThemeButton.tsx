@@ -19,7 +19,7 @@ export default function ThemeButton () {
   return (
     <label className="relative">
       <select
-        className="text-xl text-black/60 relative transition duration-300 bg-inherit outline-none w-[9rem] appearance-none cursor-pointer hover:text-black rounded-3xl p-[0.75rem_2.75rem_0.75rem_1.5rem] 
+        className="text-base text-black/60 relative transition duration-300 bg-inherit outline-none w-[9rem] appearance-none cursor-pointer hover:text-black rounded-3xl p-[0.75rem_2.75rem_0.75rem_1.5rem] 
         hover:shadow-custom
         dark:text-white/60 dark:hover:text-white dark:shadow-none"
         value={theme}
@@ -29,10 +29,10 @@ export default function ThemeButton () {
         <option value="dark">Dark</option>
         <option value="light">Light</option>
       </select>
-      <span className=" absolute left-[6.5rem] pointer-events-none flex items-center bottom-2.5 top-3">
+      <span className=" absolute left-[5rem] pointer-events-none flex items-center bottom-2.5 top-3">
         <MdArrowDownward 
           fill="#E71B40"
-          size="1.25rem"
+          size="1rem"
         />
       </span>
     </label>

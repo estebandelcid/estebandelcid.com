@@ -16,7 +16,7 @@ type TWorks = {
   role: string;
   description: string;
   tech: string;
-  workUrl?: string;
+  workUrl?: TProjectLink[];
   imgs?: TWorksImg[];
   video?: string;
 };

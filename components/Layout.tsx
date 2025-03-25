@@ -3,6 +3,7 @@ import React from "react";
 import Footer from "./Footer";
 import HeaderSection from "./HeaderSection";
 import { AnimatedDivider } from "./AnimatedDivider";
+import ThemeButton from "./ThemeButton";
 
 
 const name = "Esteban Del Cid";
@@ -70,6 +71,9 @@ export default function Layout({ children }: {
       />
        <link rel="manifest" href="/site.webmanifest" />
       </Head>
+      <section className="flex justify-end mb-4">
+      <ThemeButton />
+      </section>
       <header className="flex flex-col">
        <HeaderSection/>
        <AnimatedDivider className="w-full" />
