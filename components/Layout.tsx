@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import Footer from "./Footer";
 import HeaderSection from "./HeaderSection";
+import { AnimatedDivider } from "./AnimatedDivider";
 
 
 const name = "Esteban Del Cid";
@@ -11,7 +12,8 @@ export default function Layout({ children }: {
   children: React.ReactNode
 }) {
   return (
-    <div className="font-sans min-h-[900px] flex flex-col justify-around pb-10 pt-40">
+    <div className="font-mono min-h-[900px] container mx-auto flex flex-col pb-10 pt-40">
+      <div className="mx-auto md:mx-28">
       <Head>
         <title>{siteTitle}</title>
         <meta name="robots" content="all" />
@@ -68,11 +70,16 @@ export default function Layout({ children }: {
       />
        <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <header className="flex flex-col items-center">
+      <header className="flex flex-col">
        <HeaderSection/>
+       <AnimatedDivider className="w-full" />
       </header>
       <main>{children}</main>
+      <AnimatedDivider className="w-full" />
       <Footer/>
+
+      </div>
+      
     </div>
   );
 }

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components {
   .card-styles {
     @apply w-[306px] h-[363px] rounded-3xl bg-cover bg-center
@@ -13,4 +14,3 @@
     background-image: url(../public/images/mesh-todo.png);
   }
 }
-
