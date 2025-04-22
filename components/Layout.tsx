@@ -13,7 +13,7 @@ export default function Layout({ children }: {
   children: React.ReactNode
 }) {
   return (
-    <div className="font-mono min-h-[900px] container mx-auto flex flex-col pb-10 pt-40">
+    <div className="font-mono min-h-[900px] container mx-auto flex flex-col pb-10 pt-40 pl-1">
       <div className="mx-auto md:mx-28">
       <Head>
         <title>{siteTitle}</title>

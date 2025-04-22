@@ -19,7 +19,7 @@ export default function ThemeButton () {
   return (
     <label className="relative">
       <select
-        className="text-base text-black/60 relative transition duration-300 bg-inherit outline-none w-[9rem] appearance-none cursor-pointer hover:text-black rounded-3xl p-[0.75rem_2.75rem_0.75rem_1.5rem] 
+        className="text-sm text-black/60 relative transition duration-300 bg-inherit outline-none w-[9rem] appearance-none cursor-pointer hover:text-black rounded-3xl p-[0.75rem_2.75rem_0.75rem_1.5rem] 
         hover:shadow-custom
         dark:text-white/60 dark:hover:text-white dark:shadow-none"
         value={theme}

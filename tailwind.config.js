@@ -11,6 +11,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'max-sm': { 'max': '334px' },
+      },
       animation: {
         'b-text-move': 'b-text-move 3s ease-in-out infinite',
         'bmove': 'bmove 3s ease-in-out infinite',

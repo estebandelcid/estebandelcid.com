@@ -4,7 +4,7 @@ export default function ButtonTrigger({href, children }:{href: string; children:
     return (
         <button className="w-auto h-fit flex items-center ">
             <Link
-             className="font-normal text-black/60 dark:text-white/60 text-base hover:text-[#E71B40] dark:hover:text-[#E71B40]  underline-offset-4 translate ease-in-out hover:-translate-y-0.5 duration-300"
+             className="font-normal text-black/60 dark:text-white/60 text-sm hover:text-[#E71B40] dark:hover:text-[#E71B40]  underline-offset-4 translate ease-in-out hover:-translate-y-0.5 duration-300"
              href={href}
              target='_blank'
              >

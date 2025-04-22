@@ -11,7 +11,7 @@ export default function ButtonCards({
   return (
     <button className="w-auto h-fit flex items-center  ">
       <Link
-        className="font-extralight text-base  text-black/60 flex items-center hover:text-[#fff] transition duration-300 "
+        className="font-extralight text-sm  text-black/40 flex items-center hover:text-[#fff] transition duration-300 "
         href={href}
         target='_blank'
         aria-label={`Open the project repository on GitHub ${href}`}
