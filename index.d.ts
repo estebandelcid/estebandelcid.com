@@ -13,8 +13,7 @@ type TProject = {
 type TWorks = {
   company: string;
   img?: string;
-  role: string;
-  description: string;
+  description?: string;
   tech: string;
   workUrl?: TProjectLink[];
   imgs?: TWorksImg[];

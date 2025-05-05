@@ -2,7 +2,6 @@ import ButtonCards from "./ButtonCards";
 import Image from "next/image";
 export const WorkSection = ({
   company,
-  role,
   img,
   workUrl,
   description,
@@ -27,8 +26,11 @@ export const WorkSection = ({
             </a>
           ))}
       </section>
-      <p className="text-lg font-semibold text-black/60">{role}</p>
-      <p className="font-normal text-black/60 pb-4">{description}</p>
+      <div className="text-black/60 font-normal space-y-4 pb-2">
+  {description.split('\n\n').map((paragraph, i) => (
+    <p key={i}>{paragraph}</p>
+  ))}
+</div>
       
       <section className="w-full lg:w-1/2 flex flex-col lg:flex-row gap-4">
         {video && (
@@ -54,7 +56,7 @@ export const WorkSection = ({
       </section>
      
       <p className="font-extralight text-black/40 text-sm pt-2">
-        Technologies used: {tech}
+        Some of Technologies used: {tech}
       </p>
     </div>
   );

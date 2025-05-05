@@ -20,7 +20,7 @@ export const ProjectCard = ({
         <div>
           <p className="text-2xl text-center font-extrabold italic text-black/80"
           >
-            {title}
+            {title}↗️
           </p>
         </div>
           <div className="w-full h-full absolute bg-transparent rounded-3xl top-0 right-0 left-0">
