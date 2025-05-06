@@ -9,7 +9,7 @@ export default function ButtonCards({
   href: string;
 }) {
   return (
-    <button className="w-auto h-fit flex items-center  ">
+    <button className="w-auto h-fit flex items-center">
       <Link
         className="font-extralight text-sm  text-black/40 flex items-center hover:text-[#fff] transition duration-300 "
         href={href}

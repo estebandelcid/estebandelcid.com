@@ -2,17 +2,17 @@ import ButtonCards from "./ButtonCards";
 import Image from "next/image";
 export const WorkSection = ({
   company,
-  img,
   workUrl,
-  description,
-  tech,
-  video,
-  imgs,
+  date
 }: TWorks) => {
   return (
-    <div className="flex flex-col px-6 py-4">
-      <p className="text-xl font-semibold text-black/80">{company}</p>
-      <section className="pb-2">
+    <div className="w-full flex flex-col md:flex-row md:gap-2 px-6 py-4">
+      <div>
+      <p className="text-lg font-semibold text-black/80">{company}</p>
+      <p className="text-xs font-light text-black/40">{date}</p>
+      </div>
+     
+      <div className="pl-4">
         {workUrl &&
           workUrl.map((work) => (
             <a
@@ -20,19 +20,15 @@ export const WorkSection = ({
               href={work.url}
               target="_blank"
               aria-label={`Open ${company} project page.`}
-              className="italic text-base underline underline-offset-2 text-black/60 decoration-black/20 hover:decoration-black/60 transition-all duration-300"
+              className="italic text-base underline underline-offset-2 text-black/40 decoration-black/20 hover:decoration-black/60 transition-all duration-300"
             >
               {work.title}
             </a>
           ))}
-      </section>
-      <div className="text-black/60 font-normal space-y-4 pb-2">
-  {description.split('\n\n').map((paragraph, i) => (
-    <p key={i}>{paragraph}</p>
-  ))}
-</div>
+      </div>
       
-      <section className="w-full lg:w-1/2 flex flex-col lg:flex-row gap-4">
+      
+      {/* <section className="w-full lg:w-1/2 flex flex-col lg:flex-row gap-4">
         {video && (
           <video
             className="rounded-lg mx-auto"
@@ -53,11 +49,7 @@ export const WorkSection = ({
               />
             ))}
         </figure>
-      </section>
-     
-      <p className="font-extralight text-black/40 text-sm pt-2">
-        Some of Technologies used: {tech}
-      </p>
+      </section> */}
     </div>
   );
 };

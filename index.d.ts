@@ -12,9 +12,10 @@ type TProject = {
 
 type TWorks = {
   company: string;
+  date: string;
   img?: string;
   description?: string;
-  tech: string;
+  tech?: string;
   workUrl?: TProjectLink[];
   imgs?: TWorksImg[];
   video?: string;
