@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components {
   .card-styles {
-    @apply w-[306px] h-[363px] rounded-3xl bg-cover bg-center
+    @apply max-sm:w-[278px] max-sm:-ml-1 w-[306px] h-[153px] rounded-xl bg-cover bg-center transition-all duration-500 ease-in-out hover:rounded-md;
+
   }
 
 }
@@ -13,4 +15,3 @@
     background-image: url(../public/images/mesh-todo.png);
   }
 }
-

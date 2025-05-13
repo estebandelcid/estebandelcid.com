@@ -10,6 +10,17 @@ type TProject = {
   links: TProjectLink[];
 };
 
+type TWorks = {
+  company: string;
+  date: string;
+  img?: string;
+  description?: string;
+  tech?: string;
+  workUrl?: TProjectLink[];
+  imgs?: TWorksImg[];
+  video?: string;
+};
+
 type TProjectLink = {
   url: string;
   title: string;

@@ -11,6 +11,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'max-sm': { 'max': '334px' },
+      },
       animation: {
         'b-text-move': 'b-text-move 3s ease-in-out infinite',
         'bmove': 'bmove 3s ease-in-out infinite',
@@ -28,7 +31,7 @@ module.exports = {
         }
       },
       boxShadow: {
-        'custom': 'inset 0 0 1px 1px #fff, 0 0 0 1px rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .01), 0 3px 5px rgba(0, 0, 0, .01), 0 5px 9px rgba(0, 0, 0, .02), 0 7px 16px rgba(0, 0, 0, .02)', 
+        'custom': '0 0 0 1px rgba(0, 0, 0, .01), 0 1px 1px rgba(0, 0, 0, .01), 0 3px 5px rgba(0, 0, 0, .01), 0 5px 9px rgba(0, 0, 0, .02), 0 7px 16px rgba(0, 0, 0, .02)', 
       }
     },
   },
