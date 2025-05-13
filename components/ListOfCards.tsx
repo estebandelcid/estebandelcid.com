@@ -4,8 +4,8 @@ import projects from "../lib/projects";
 export default function ListOfCards() {
   return (
     <div className="flex flex-col">
-      <h2 className="text-xl font-bold text-black/80 pb-4">Projects</h2>
-      <div className="text-base font-normal text-black/60 px-6 pb-4 space-y-2">
+      <h2 className="text-xl font-bold text-black/80 dark:text-white/80 pb-4">Projects</h2>
+      <div className="text-base font-normal text-black/60 dark:text-white/60 px-6 pb-4 space-y-2">
         <p>
           These are some of the projects I built while learning web development.
           Most of them focus on using and understanding React—things like

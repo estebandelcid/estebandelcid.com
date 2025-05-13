@@ -6,7 +6,7 @@ export default function ArrowUpRight() {
       viewBox="0 0 24 24"
       strokeWidth={3}
       stroke="currentColor"
-      className="size-4 text-black/60"
+      className="size-4"
     >
       <path
         strokeLinecap="round"
