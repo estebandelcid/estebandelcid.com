@@ -10,7 +10,7 @@ export const ProjectCard = ({
   links,
 }: TProject) => {
   return (
-    <div className="flex flex-col max-sm:items-center lg:flex-row gap-4 mt-4 mb-8 md:pl-6">
+    <div className="flex flex-col max-sm:items-center lg:flex-row gap-4 mt-4 mb-8 pl-6">
       <div className="relative group card-styles transition ease-in-out delay-50 hover:scale-105 shadow-lg hover:shadow-xl dark:hover:shadow-none duration-300">
         <div
           className="absolute inset-0 bg-cover rounded-lg blur-[1px] contrast-50 pointer-events-none"
