@@ -1,5 +1,4 @@
 import ButtonCards from "./ButtonCards";
-import Image from "next/image";
 import ArrowUpRight from "./ui/ArrowUpRight";
 export const ProjectCard = ({
   title,
